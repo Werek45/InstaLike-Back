@@ -1,6 +1,5 @@
 import express from "express";
-import conectarAoBanco from "./src/config/deConfig.js";
-//lembrar do  .js  no final do comando
+import conectarAoBanco from "./src/config/dbConfig.js";
 
 await conectarAoBanco(process.env.STRING_CONEXAO)
 
@@ -13,7 +12,7 @@ const posts = [//lista de dados de posts //Array em memoria
 function getTodosPosts() {
     
 }
-    
+
     const app = express();
 app.use(express.json());
 
