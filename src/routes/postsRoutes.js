@@ -1,5 +1,5 @@
 import express from "express";
-import { listarPosts, postarNovoPost} from "../controllers/postsControllers.js";
+import { listarPosts, postarNovoPost } from "../controllers/postsControllers.js";
 
 const routes = (app) => {
     // Configura o middleware express.json(), que permite que o servidor analise o corpo das requisições HTTP que possuem o cabeçalho Content-Type: application/json

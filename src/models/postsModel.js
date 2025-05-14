@@ -13,7 +13,6 @@ export function getTodosPosts() {
     return colecao.find().toArray();
 }
 
-// Função para criar um novo post
 export async function criarPost(novoPost) {
     const db = conexao.db('imersao-instabytes');
     const colecao = db.collection("posts");
